@@ -12,14 +12,17 @@ body {
 
 .inputbox {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between; /* Adjust to evenly distribute space between input and dots */
+    align-items: center; /* Ensure input and dots are vertically centered */
     margin: 16px;
     height: 30px;
 }
 
 input {
-    width: 80%;
+    flex-grow: 1; /* Allow the input to take up as much space as possible */
+    margin-right: 10px; /* Add some space between input and circles */
     border-radius: 8px;
+    height:30px;
     border: 0.02em solid rgba(0, 0, 0, 0.5);
 }
 
@@ -114,7 +117,7 @@ nav {
     }
 
     .feature {
-        width: 50%; /* Two features per row */
+        width: 49%; /* Two features per row */
         height: 150px;
         margin-bottom: 10px;
     }
@@ -136,14 +139,13 @@ nav {
     }
 
     .features {
-        
         flex-direction: column;
         align-items: center;
     }
 
     .feature {
         width: 100%;
-        height: 130px;
+        height: 120px;
         margin-bottom: 10px;
         font-size: 18px;
     }
